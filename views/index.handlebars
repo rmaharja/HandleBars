@@ -1,0 +1,22 @@
+<h1> Eat Dem Burgers </h1>
+
+<h2> True </h2>
+
+<ul>
+    {{#each burgerModel}}
+        {{#unless devoured}}
+        {{> burgerBlock/burger-Block burgerEaten=true}}
+        {{/unless}}
+    {{/each}}
+</ul>
+
+<h2> False </h2>
+
+<ul>
+    {{#each burgerModel}}
+        {{#if devoured}}
+            {{> burgerBlock/burger-Block burgerEaten=false}}
+        {{/if}}
+    {{/each}}
+    
+</ul>
