@@ -3,9 +3,9 @@
 <h2> True </h2>
 
 <ul>
-    {{#each burgerModel}}
+    {{#each burgerData}}
         {{#unless devoured}}
-        {{> burgerBlock/burger-Block burgerEaten=true}}
+        {{> burgerBlock/burger-Block burgerEaten = true}}
         {{/unless}}
     {{/each}}
 </ul>
@@ -13,7 +13,7 @@
 <h2> False </h2>
 
 <ul>
-    {{#each burgerModel}}
+    {{#each burgerData}}
         {{#if devoured}}
             {{> burgerBlock/burger-Block burgerEaten=false}}
         {{/if}}

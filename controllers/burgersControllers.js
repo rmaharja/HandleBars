@@ -8,7 +8,7 @@ var burgerModel = require ("../models/burgerModel.js");
 router.get("/", function(req, res){
   burgerModel.selectAll(function(data){
     var objectGet = {
-      burgerModel: data
+      burgerData: data
     };
     console.log("burgersController.js Line 13");
     console.log(objectGet);
